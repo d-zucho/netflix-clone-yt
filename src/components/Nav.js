@@ -1,8 +1,25 @@
+import { useState, useEffect } from 'react'
 import './styles/nav.styles.css'
 
 const Nav = () => {
+  const [show, setShow] = useState(true)
+
+  const transitionNavBar = () => {
+    if (window.scrollY > 100) {
+      setShow(false)
+    } else {
+      setShow(true)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', transitionNavBar)
+    console.log('useeffect')
+    return () => window.removeEventListener('scroll', transitionNavBar)
+  }, [])
+
   return (
-    <div className='nav nav__black'>
+    <div className={`nav ${show && 'nav__black'}`}>
       <div className='nav__content'>
         <img
           src='https://pngimg.com/uploads/netflix/netflix_PNG25.png'

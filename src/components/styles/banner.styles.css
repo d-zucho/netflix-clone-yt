@@ -1,0 +1,49 @@
+.banner {
+  position: relative;
+  /* background-image: url('../../assets/daredevil-banner.webp'); */
+  background-image: url('https://th.bing.com/th/id/R.eb15c55d646679cd92b4bd18a3681ae3?rik=4%2fRKvZ1FrsrhkA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-9b0WqSTPOIQ%2fUJA_HoiXVdI%2fAAAAAAAAAMs%2fLoKlwt0g2nM%2fs1600%2fblack.jpg&ehk=2FauaUE8ZWanOArLCd2mEacm%2f2fIdNDOhaYPsZjyOUc%3d&risl=&pid=ImgRaw&r=0');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  color: white;
+}
+
+.banner__content {
+  padding-top: 140px;
+  margin-left: 30px;
+  height: 190px;
+}
+
+.banner__title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.banner__description {
+  width: 45rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 80px;
+}
+
+.banner--fadeBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(12, 12, 12, 1) 50%,
+    rgba(14, 14, 14, 0.8368522408963585) 100%
+  );
+}
+
+.banner__button--play {
+  height: 24px;
+  width: 62px;
+}
